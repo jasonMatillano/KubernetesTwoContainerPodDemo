@@ -19,13 +19,13 @@ spec:
     command: ["/bin/sh"]
     args: ["-c", "echo Hello from the sidecar container; sleep 300"] 
 ```
-*APPLY POD***
+*APPLY POD*
 ```bash
 kubectl apply -f <pod name>.yaml
 kubectl apply -f nginx-curl-pod.yaml
 kubectl get pod
 ```
-*CHECK CONNECTION inside POD***
+*CHECK CONNECTION inside POD*
 ```bash
 kubectl exec -it <pod name> -c <container name> -- <command>
 kubectl exec -it nginx-curl -c sidecar -- /bin/sh
