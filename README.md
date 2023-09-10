@@ -1,5 +1,5 @@
 # TwoContainerPod
-# POD with TWO Container=====================================
+# POD with TWO Container Demo
 Create nginx-curl-pod.yaml
 ---
 apiVersion: v1
