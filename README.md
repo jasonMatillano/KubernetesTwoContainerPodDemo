@@ -1,7 +1,7 @@
 # TwoContainerPod
 # POD with TWO Container Demo
 Create nginx-curl-pod.yaml
----
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -18,7 +18,7 @@ spec:
     image: curlimages/curl
     command: ["/bin/sh"]
     args: ["-c", "echo Hello from the sidecar container; sleep 300"] 
----
+```
 *APPLY POD***
 ```bash
 kubectl apply -f <pod name>.yaml
