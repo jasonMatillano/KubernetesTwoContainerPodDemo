@@ -27,7 +27,7 @@ kubectl get pod
 ```
 *CHECK CONNECTION inside POD***
 ```bash
-kubectl exec -it <pod name> -c <container name>-- <command>
+kubectl exec -it <pod name> -c <container name> -- <command>
 kubectl exec -it nginx-curl -c sidecar -- /bin/sh
 ```open shell in sidecar container
 netstat -ln
