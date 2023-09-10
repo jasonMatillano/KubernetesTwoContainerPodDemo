@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgres2
+  labels:
+    app: postgres2  # Add the label here
+spec:
+  containers:
+  - name: postgres
+    image: postgres
+    ports:
+    - containerPort: 5432
+    env:
+    - name: POSTGRES_PASSWORD
+      value: your_password_here
